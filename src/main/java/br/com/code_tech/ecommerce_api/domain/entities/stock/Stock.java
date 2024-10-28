@@ -1,10 +1,9 @@
 package br.com.code_tech.ecommerce_api.domain.entities.stock;
 
-import br.com.code_tech.ecommerce_api.domain.entities.produtct.Product;
+import br.com.code_tech.ecommerce_api.domain.entities.product.Product;
 
-import java.math.BigDecimal;
-
-public record Stock(Integer quantityAvailable,
+public record Stock(String uuid,
+                    Integer quantityAvailable,
                     Integer minimumQuantity,
                     Integer reservedQuantity,
                     Product product) {}
